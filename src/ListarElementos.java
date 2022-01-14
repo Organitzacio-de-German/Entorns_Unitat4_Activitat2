@@ -1,9 +1,15 @@
+import java.util.Scanner;
+
 public class ListarElementos {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
     String array [] = new String [20];
-    array[1] = "si";
-    array[2] = "buenass";
+
     listarElementos(array);
+    char eixir = scanner.next().charAt(0);
+        if (eixir == 'q'){
+            return;
+        }
     }
     public static void listarElementos(String arr[]){
         for (int i = 0; i <arr.length ; i++) {
